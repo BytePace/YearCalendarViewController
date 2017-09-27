@@ -23,7 +23,6 @@ class YearCalendarViewController: UIViewController {
     
     var month = 1
     
-    var dateComponent : DateComponents!
     var daysOfWeek = [[Int]]()
     var tempDaysOfWeek = [[Int]]()
     var dates = [[Date]]()
@@ -63,12 +62,10 @@ class YearCalendarViewController: UIViewController {
             }
             dates.append(datesArray)
             daysOfWeek.append(arr)
-            for cv in collectionViews {
-                cv.reloadData()
-            }
         }
-        dateComp.month = 2
-        self.dateComponent = dateComp
+        for cv in collectionViews {
+            cv.reloadData()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,17 +94,13 @@ extension YearCalendarViewController : UICollectionViewDataSource, UICollectionV
         var array = tempDaysOfWeek[monthIndex]
         var datesArray = tempDates[monthIndex]
         
-        if array.count > 0 && datesArray.count > 0 {
-            if array.first == rawDay {
-                _ = array.removeFirst()
-                cell.date = datesArray.removeFirst()
-                tempDates[monthIndex] = datesArray
-                tempDaysOfWeek[monthIndex] = array
-            } else {
-                cell.dayLabel.text = ""
-            }
-        } else {
-               cell.dayLabel.text = ""
+        cell.dayLabel.text = ""
+
+        if array.count > 0 && datesArray.count > 0, array.first == rawDay {
+            _ = array.removeFirst()
+            cell.date = datesArray.removeFirst()
+            tempDates[monthIndex] = datesArray
+            tempDaysOfWeek[monthIndex] = array
         }
         return cell
     }
@@ -125,16 +118,3 @@ extension YearCalendarViewController : UICollectionViewDataSource, UICollectionV
         return CGSize(width: maxLength, height: maxLength)
     }
 }
-
-let YearCalendarDayCellIdentifier = "YearCalendarDayCell"
-class YearCalendarDayCell : UICollectionViewCell {
-    @IBOutlet weak var dayLabel : UILabel!
-    
-    var date : Date! {
-        didSet {
-            let day = Calendar.current.component(.day, from: date)
-            dayLabel.text = "\(day)"
-        }
-    }
-}
- 
