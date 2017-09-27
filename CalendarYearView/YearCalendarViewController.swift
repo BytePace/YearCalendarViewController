@@ -12,8 +12,15 @@ let YearCalendarViewControllerIdentifier = "YearCalendarViewController"
 
 class YearCalendarViewController: UIViewController {
     @IBOutlet weak var collectionView : UICollectionView!
+    @IBOutlet weak var yearLabel : UILabel!
     
-    var year = 2017
+    var year = 2017 {
+        didSet {
+            loadViewIfNeeded()
+            generateDates()
+        }
+    }
+    
     var month = 1
     
     var dateComponent : DateComponents!
@@ -26,6 +33,16 @@ class YearCalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for cv in collectionViews {
+            cv.register(UINib(nibName: "YearCalendarDayCell", bundle: nil), forCellWithReuseIdentifier: YearCalendarDayCellIdentifier)
+        }
+        generateDates()
+    }
+    
+    func generateDates() {
+        daysOfWeek.removeAll()
+        dates.removeAll()
+        
         var dateComp = DateComponents(calendar: Calendar.current, timeZone: TimeZone.current, year: year)
         for i in 1 ... 12 {
             dateComp.month = i
@@ -47,12 +64,16 @@ class YearCalendarViewController: UIViewController {
             dates.append(datesArray)
             daysOfWeek.append(arr)
             for cv in collectionViews {
-                cv.register(UINib(nibName: "YearCalendarDayCell", bundle: nil), forCellWithReuseIdentifier: YearCalendarDayCellIdentifier)
                 cv.reloadData()
             }
         }
         dateComp.month = 2
         self.dateComponent = dateComp
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        yearLabel.text = "\(year)"
     }
 }
 
