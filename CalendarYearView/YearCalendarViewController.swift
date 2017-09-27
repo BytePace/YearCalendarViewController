@@ -12,8 +12,6 @@ let YearCalendarViewControllerIdentifier = "YearCalendarViewController"
 
 let highlightingColor = UIColor(red: 100/255, green: 150/255, blue: 207/255, alpha: 1)
 class YearCalendarViewController: UIViewController {
-    @IBOutlet weak var yearLabel : UILabel!
-
     var thisYear = Calendar.current.component(.year, from: Date())
 
     var isThisYear = false
@@ -42,6 +40,13 @@ class YearCalendarViewController: UIViewController {
         }
         collectionViews.sort { (cv1, cv2) -> Bool in
             return cv1.tag < cv2.tag
+        }
+        monthsLabels.sort { (lbl1, lbl2) -> Bool in
+            return lbl1.tag < lbl2.tag
+        }
+        for cv in collectionViews {
+            cv.dataSource = self
+            cv.delegate = self
         }
         generateDates()
     }
@@ -90,10 +95,6 @@ class YearCalendarViewController: UIViewController {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        yearLabel.text = "\(year)"
-    }
 }
 
 extension YearCalendarViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

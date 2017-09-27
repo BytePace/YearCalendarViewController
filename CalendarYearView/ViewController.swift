@@ -47,7 +47,8 @@ extension ViewController : UIPageViewControllerDelegate, UIPageViewControllerDat
     }
     
     func getYearViewController() -> YearCalendarViewController {
-        return mainStoryboard.instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController
+        return YearCalendarViewController(nibName: "YearCalendarViewController", bundle: nil)
+//        return mainStoryboard.instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
