@@ -460,7 +460,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="HiF-Yb-fjf" id="zxT-DB-3BF"/>
                         <outlet property="yearLabel" destination="nKq-fV-2gB" id="F1t-3O-kbW"/>
                         <outletCollection property="collectionViews" destination="HiF-Yb-fjf" collectionClass="NSMutableArray" id="DCC-uI-ray"/>
                         <outletCollection property="collectionViews" destination="HqJ-B4-dTf" collectionClass="NSMutableArray" id="DN2-Gf-ZgL"/>
@@ -474,6 +473,18 @@
                         <outletCollection property="collectionViews" destination="LUR-uq-XuU" collectionClass="NSMutableArray" id="BwA-gY-oCP"/>
                         <outletCollection property="collectionViews" destination="3NX-z0-CPD" collectionClass="NSMutableArray" id="ljZ-nb-bon"/>
                         <outletCollection property="collectionViews" destination="EVD-Sj-jGm" collectionClass="NSMutableArray" id="Kzo-oL-1hJ"/>
+                        <outletCollection property="monthsLabels" destination="5BY-02-WdU" collectionClass="NSMutableArray" id="q02-mq-dSQ"/>
+                        <outletCollection property="monthsLabels" destination="XS7-uh-2ol" collectionClass="NSMutableArray" id="NFd-YS-6ba"/>
+                        <outletCollection property="monthsLabels" destination="13c-Sj-TYK" collectionClass="NSMutableArray" id="zcj-wX-JcZ"/>
+                        <outletCollection property="monthsLabels" destination="kvt-eD-DWo" collectionClass="NSMutableArray" id="oxT-6m-A2j"/>
+                        <outletCollection property="monthsLabels" destination="eYa-Iz-phP" collectionClass="NSMutableArray" id="eM2-Pe-uvz"/>
+                        <outletCollection property="monthsLabels" destination="dYz-bj-dtm" collectionClass="NSMutableArray" id="sHB-VD-i2N"/>
+                        <outletCollection property="monthsLabels" destination="OFC-Y7-CMv" collectionClass="NSMutableArray" id="vvO-pR-ZhD"/>
+                        <outletCollection property="monthsLabels" destination="h7m-VT-9Hn" collectionClass="NSMutableArray" id="Yp7-ug-b2F"/>
+                        <outletCollection property="monthsLabels" destination="rcb-nc-e0Z" collectionClass="NSMutableArray" id="Xa4-9h-qow"/>
+                        <outletCollection property="monthsLabels" destination="i1q-fi-mif" collectionClass="NSMutableArray" id="fvn-Y1-kNT"/>
+                        <outletCollection property="monthsLabels" destination="F46-2E-BKR" collectionClass="NSMutableArray" id="6iF-QV-pvG"/>
+                        <outletCollection property="monthsLabels" destination="JNO-el-XWQ" collectionClass="NSMutableArray" id="31T-4X-Sac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,13 +11,18 @@ import UIKit
 let YearCalendarViewControllerIdentifier = "YearCalendarViewController"
 
 class YearCalendarViewController: UIViewController {
-    @IBOutlet weak var collectionView : UICollectionView!
     @IBOutlet weak var yearLabel : UILabel!
+
+    var thisYear = Calendar.current.component(.year, from: Date())
+
+    var isThisYear = false
     
     var year = 2017 {
         didSet {
             loadViewIfNeeded()
             generateDates()
+            isThisYear = thisYear == year
+            highlightMonthIfNeeded()
         }
     }
     
@@ -29,6 +34,7 @@ class YearCalendarViewController: UIViewController {
     var tempDates = [[Date]]()
     
     @IBOutlet var collectionViews : [UICollectionView]!
+    @IBOutlet var monthsLabels : [UILabel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +42,20 @@ class YearCalendarViewController: UIViewController {
             cv.register(UINib(nibName: "YearCalendarDayCell", bundle: nil), forCellWithReuseIdentifier: YearCalendarDayCellIdentifier)
         }
         generateDates()
+    }
+    
+    func highlightMonthIfNeeded() {
+        for monthLabel in monthsLabels {
+            monthLabel.textColor = UIColor.black
+        }
+        if isThisYear {
+            for monthLabel in monthsLabels {
+                let thisMonthIndex = Calendar.current.component(.month, from: Date())
+                if let index = monthsLabels.index(of: monthLabel), index + 1 == thisMonthIndex {
+                    monthLabel.textColor = UIColor(red: 100/255, green: 150/255, blue: 207/255, alpha: 1)
+                }
+            }
+        }
     }
     
     func generateDates() {
