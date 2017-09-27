@@ -10,15 +10,13 @@ import UIKit
 
 class ViewController: UIPageViewController {
     var vcs = [YearCalendarViewController]()
+    var thisYear = Calendar.current.component(.year, from: Date())
+    var currentYear = Calendar.current.component(.year, from: Date())
     
-    var currentYear = 2017
+    var timerEnded = true
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        for _ in 0...5 {
-            vcs.append(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController)
-        }
-        
+        super.viewDidLoad()        
         let vc = getYearViewController()
         vc.year = currentYear
         
@@ -28,34 +26,28 @@ class ViewController: UIPageViewController {
         delegate = self
     }
     
-
 }
 
 extension ViewController : UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if currentYear <= 0 {
-            return nil
-        }
+        if currentYear > thisYear + 10 && timerEnded { return nil }
+        timerEnded = false
+
         let vc = getYearViewController()
-        vc.year = currentYear + 1
-        print("")
-        print("currentYear \(currentYear)")
-        print("after vc year \(vc.year)")
+        vc.year = self.currentYear + 1
         return vc
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        if currentYear <= thisYear - 10 && timerEnded { return nil }
+        timerEnded = false
         let vc = getYearViewController()
-        vc.year = currentYear - 1
-        print("")
-        print("currentYear \(currentYear)")
-        print("before vc year \(vc.year)")
+        vc.year = self.currentYear - 1
         return vc
     }
     
     func getYearViewController() -> YearCalendarViewController {
-        let vc = vcs.removeFirst()
-        vcs.append(vc)
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController
         return vc
     }
     
@@ -63,6 +55,11 @@ extension ViewController : UIPageViewControllerDelegate, UIPageViewControllerDat
         didEndPageScrolling()
     }
     
+    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        print("will transitionTo \((pendingViewControllers.first as! YearCalendarViewController).year)")
+        
+    }
+
     fileprivate func didEndPageScrolling() {
         guard let vc = viewControllers?.first as? YearCalendarViewController else { return }
         currentYear = vc.year
