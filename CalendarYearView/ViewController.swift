@@ -12,11 +12,11 @@ class ViewController: UIPageViewController {
     var vcs = [YearCalendarViewController]()
     var thisYear = Calendar.current.component(.year, from: Date())
     var currentYear = Calendar.current.component(.year, from: Date())
-    
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var timerEnded = true
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
         let vc = getYearViewController()
         vc.year = currentYear
         
@@ -47,17 +47,11 @@ extension ViewController : UIPageViewControllerDelegate, UIPageViewControllerDat
     }
     
     func getYearViewController() -> YearCalendarViewController {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController
-        return vc
+        return mainStoryboard.instantiateViewController(withIdentifier: YearCalendarViewControllerIdentifier) as! YearCalendarViewController
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         didEndPageScrolling()
-    }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
-        print("will transitionTo \((pendingViewControllers.first as! YearCalendarViewController).year)")
-        
     }
 
     fileprivate func didEndPageScrolling() {
