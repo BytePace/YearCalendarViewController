@@ -10,6 +10,7 @@ import UIKit
 
 let YearCalendarViewControllerIdentifier = "YearCalendarViewController"
 
+let highlightingColor = UIColor(red: 100/255, green: 150/255, blue: 207/255, alpha: 1)
 class YearCalendarViewController: UIViewController {
     @IBOutlet weak var yearLabel : UILabel!
 
@@ -25,8 +26,6 @@ class YearCalendarViewController: UIViewController {
             highlightMonthIfNeeded()
         }
     }
-    
-    var month = 1
     
     var daysOfWeek = [[Int]]()
     var tempDaysOfWeek = [[Int]]()
@@ -52,7 +51,7 @@ class YearCalendarViewController: UIViewController {
             for monthLabel in monthsLabels {
                 let thisMonthIndex = Calendar.current.component(.month, from: Date())
                 if let index = monthsLabels.index(of: monthLabel), index + 1 == thisMonthIndex {
-                    monthLabel.textColor = UIColor(red: 100/255, green: 150/255, blue: 207/255, alpha: 1)
+                    monthLabel.textColor = highlightingColor
                 }
             }
         }
@@ -115,10 +114,13 @@ extension YearCalendarViewController : UICollectionViewDataSource, UICollectionV
         var datesArray = tempDates[monthIndex]
         
         cell.dayLabel.text = ""
-
+        cell.dayLabel.textColor = UIColor.black
         if array.count > 0 && datesArray.count > 0, array.first == rawDay {
             _ = array.removeFirst()
             cell.date = datesArray.removeFirst()
+            if isThisYear && monthIndex + 1 == Calendar.current.component(.year, from: Date()) && Calendar.current.component(.day, from: Date()) == Calendar.current.component(.day, from: cell.date) {
+                cell.dayLabel.textColor = highlightingColor
+            }
             tempDates[monthIndex] = datesArray
             tempDaysOfWeek[monthIndex] = array
         }
