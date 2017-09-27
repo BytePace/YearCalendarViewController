@@ -53,7 +53,7 @@ class YearCalendarViewController: UIViewController {
     
     func highlightMonthIfNeeded() {
         for monthLabel in monthsLabels {
-            monthLabel.textColor = UIColor.black
+            monthLabel.textColor = UIColor.darkGray
         }
         if isThisYear {
             for monthLabel in monthsLabels {

@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8135FFB31F726B7700492167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135FFB21F726B7700492167 /* AppDelegate.swift */; };
-		8135FFB51F726B7700492167 /* YearCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135FFB41F726B7700492167 /* YearCalendarViewController.swift */; };
 		8135FFB81F726B7700492167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135FFB61F726B7700492167 /* Main.storyboard */; };
 		8135FFBA1F726B7700492167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8135FFB91F726B7700492167 /* Assets.xcassets */; };
 		8135FFBD1F726B7700492167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135FFBB1F726B7700492167 /* LaunchScreen.storyboard */; };
-		8135FFC51F727E9400492167 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135FFC41F727E9400492167 /* DateHelper.swift */; };
-		814EAD5B1F7B702E000908F5 /* YearCalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814EAD5A1F7B702E000908F5 /* YearCalendarDayCell.swift */; };
-		8193239F1F7BD40700F9CC1B /* YearCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8193239E1F7BD40700F9CC1B /* YearCalendarViewController.xib */; };
-		81CE7B141F7A6F59000D296D /* YearCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81CE7B131F7A6F59000D296D /* YearCalendarDayCell.xib */; };
-		81CE7B161F7A71B6000D296D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CE7B151F7A71B6000D296D /* ViewController.swift */; };
+		819323A81F7BD8BE00F9CC1B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819323A21F7BD8BE00F9CC1B /* DateHelper.swift */; };
+		819323A91F7BD8BE00F9CC1B /* YearCalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819323A31F7BD8BE00F9CC1B /* YearCalendarDayCell.swift */; };
+		819323AA1F7BD8BE00F9CC1B /* YearCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819323A41F7BD8BE00F9CC1B /* YearCalendarDayCell.xib */; };
+		819323AB1F7BD8BE00F9CC1B /* YearCalendarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819323A51F7BD8BE00F9CC1B /* YearCalendarPageViewController.swift */; };
+		819323AC1F7BD8BE00F9CC1B /* YearCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819323A61F7BD8BE00F9CC1B /* YearCalendarViewController.swift */; };
+		819323AD1F7BD8BE00F9CC1B /* YearCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 819323A71F7BD8BE00F9CC1B /* YearCalendarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8135FFAF1F726B7700492167 /* CalendarYearView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarYearView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135FFB21F726B7700492167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8135FFB41F726B7700492167 /* YearCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearCalendarViewController.swift; sourceTree = "<group>"; };
 		8135FFB71F726B7700492167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8135FFB91F726B7700492167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8135FFBC1F726B7700492167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8135FFBE1F726B7700492167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8135FFC41F727E9400492167 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
-		814EAD5A1F7B702E000908F5 /* YearCalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalendarDayCell.swift; sourceTree = "<group>"; };
-		8193239E1F7BD40700F9CC1B /* YearCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearCalendarViewController.xib; sourceTree = "<group>"; };
-		81CE7B131F7A6F59000D296D /* YearCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearCalendarDayCell.xib; sourceTree = "<group>"; };
-		81CE7B151F7A71B6000D296D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		819323A21F7BD8BE00F9CC1B /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		819323A31F7BD8BE00F9CC1B /* YearCalendarDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalendarDayCell.swift; sourceTree = "<group>"; };
+		819323A41F7BD8BE00F9CC1B /* YearCalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearCalendarDayCell.xib; sourceTree = "<group>"; };
+		819323A51F7BD8BE00F9CC1B /* YearCalendarPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalendarPageViewController.swift; sourceTree = "<group>"; };
+		819323A61F7BD8BE00F9CC1B /* YearCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearCalendarViewController.swift; sourceTree = "<group>"; };
+		819323A71F7BD8BE00F9CC1B /* YearCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YearCalendarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +64,27 @@
 		8135FFB11F726B7700492167 /* CalendarYearView */ = {
 			isa = PBXGroup;
 			children = (
+				819323A11F7BD8BE00F9CC1B /* YearCalendarViewController */,
 				8135FFB21F726B7700492167 /* AppDelegate.swift */,
-				8135FFB41F726B7700492167 /* YearCalendarViewController.swift */,
-				8135FFC41F727E9400492167 /* DateHelper.swift */,
-				81CE7B151F7A71B6000D296D /* ViewController.swift */,
-				814EAD5A1F7B702E000908F5 /* YearCalendarDayCell.swift */,
-				81CE7B131F7A6F59000D296D /* YearCalendarDayCell.xib */,
-				8193239E1F7BD40700F9CC1B /* YearCalendarViewController.xib */,
 				8135FFB61F726B7700492167 /* Main.storyboard */,
 				8135FFB91F726B7700492167 /* Assets.xcassets */,
 				8135FFBB1F726B7700492167 /* LaunchScreen.storyboard */,
 				8135FFBE1F726B7700492167 /* Info.plist */,
 			);
 			path = CalendarYearView;
+			sourceTree = "<group>";
+		};
+		819323A11F7BD8BE00F9CC1B /* YearCalendarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				819323A21F7BD8BE00F9CC1B /* DateHelper.swift */,
+				819323A31F7BD8BE00F9CC1B /* YearCalendarDayCell.swift */,
+				819323A41F7BD8BE00F9CC1B /* YearCalendarDayCell.xib */,
+				819323A51F7BD8BE00F9CC1B /* YearCalendarPageViewController.swift */,
+				819323A61F7BD8BE00F9CC1B /* YearCalendarViewController.swift */,
+				819323A71F7BD8BE00F9CC1B /* YearCalendarViewController.xib */,
+			);
+			path = YearCalendarViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8135FFBD1F726B7700492167 /* LaunchScreen.storyboard in Resources */,
-				81CE7B141F7A6F59000D296D /* YearCalendarDayCell.xib in Resources */,
-				8193239F1F7BD40700F9CC1B /* YearCalendarViewController.xib in Resources */,
+				819323AA1F7BD8BE00F9CC1B /* YearCalendarDayCell.xib in Resources */,
+				819323AD1F7BD8BE00F9CC1B /* YearCalendarViewController.xib in Resources */,
 				8135FFBA1F726B7700492167 /* Assets.xcassets in Resources */,
 				8135FFB81F726B7700492167 /* Main.storyboard in Resources */,
 			);
@@ -154,11 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814EAD5B1F7B702E000908F5 /* YearCalendarDayCell.swift in Sources */,
-				8135FFC51F727E9400492167 /* DateHelper.swift in Sources */,
-				8135FFB51F726B7700492167 /* YearCalendarViewController.swift in Sources */,
-				81CE7B161F7A71B6000D296D /* ViewController.swift in Sources */,
 				8135FFB31F726B7700492167 /* AppDelegate.swift in Sources */,
+				819323A81F7BD8BE00F9CC1B /* DateHelper.swift in Sources */,
+				819323AB1F7BD8BE00F9CC1B /* YearCalendarPageViewController.swift in Sources */,
+				819323AC1F7BD8BE00F9CC1B /* YearCalendarViewController.swift in Sources */,
+				819323A91F7BD8BE00F9CC1B /* YearCalendarDayCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

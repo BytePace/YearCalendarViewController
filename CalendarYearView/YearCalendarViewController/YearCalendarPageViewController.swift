@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIPageViewController {
+class YearCalendarPageViewController: UIPageViewController {
     var vcs = [YearCalendarViewController]()
     var thisYear = Calendar.current.component(.year, from: Date())
     var currentYear = Calendar.current.component(.year, from: Date())
@@ -28,7 +28,7 @@ class ViewController: UIPageViewController {
     
 }
 
-extension ViewController : UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+extension YearCalendarPageViewController : UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         if currentYear > thisYear + 10 && timerEnded { return nil }
         timerEnded = false
