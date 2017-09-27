@@ -37,9 +37,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqJ-JY-GAI">
                                         <rect key="frame" x="0.0" y="0.5" width="355" height="127.5"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-B4-dTf">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HqJ-B4-dTf">
                                                 <rect key="frame" x="127" y="41.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HqJ-B4-dTf" secondAttribute="height" multiplier="7:6" id="znC-na-8kB"/>
                                                 </constraints>
@@ -55,9 +55,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="jwL-mu-Dau"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-bC-wpz">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-bC-wpz">
                                                 <rect key="frame" x="254" y="41.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M97-mA-Hdr">
                                                     <size key="itemSize" width="50" height="50"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -88,9 +88,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-Yb-fjf">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-Yb-fjf">
                                                 <rect key="frame" x="0.0" y="41" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HiF-Yb-fjf" secondAttribute="height" multiplier="7:6" id="Qac-KL-fiT"/>
                                                 </constraints>
@@ -107,7 +107,7 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="5BY-02-WdU" firstAttribute="centerX" secondItem="HiF-Yb-fjf" secondAttribute="centerX" id="1Ie-HG-iOl"/>
                                             <constraint firstAttribute="trailing" secondItem="Kng-bC-wpz" secondAttribute="trailing" id="46a-LW-Nck"/>
@@ -136,9 +136,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf2-5e-ZDY">
                                         <rect key="frame" x="0.0" y="138" width="355" height="127"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KxR-jn-x5w">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KxR-jn-x5w">
                                                 <rect key="frame" x="0.0" y="41" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="KxR-jn-x5w" secondAttribute="height" multiplier="7:6" id="VxD-WE-AnK"/>
                                                 </constraints>
@@ -154,9 +154,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="YRf-IK-icX"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-aM-fP9">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e7d-aM-fP9">
                                                 <rect key="frame" x="127" y="41" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="e7d-aM-fP9" secondAttribute="height" multiplier="7:6" id="T9b-mt-PtV"/>
                                                 </constraints>
@@ -172,9 +172,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Hnn-4D-700"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-IB-7WS">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="6" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q3l-IB-7WS">
                                                 <rect key="frame" x="254" y="41" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JKV-Bs-b2A">
                                                     <size key="itemSize" width="50" height="50"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -206,7 +206,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Q3l-IB-7WS" secondAttribute="trailing" id="2Nj-TY-JkD"/>
                                             <constraint firstItem="kvt-eD-DWo" firstAttribute="centerX" secondItem="KxR-jn-x5w" secondAttribute="centerX" id="2ww-XY-77m"/>
@@ -233,9 +233,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nit-Do-vHM">
                                         <rect key="frame" x="0.0" y="275" width="355" height="127"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FVB-xJ-1Ga">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="7" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FVB-xJ-1Ga">
                                                 <rect key="frame" x="0.0" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FVB-xJ-1Ga" secondAttribute="height" multiplier="7:6" id="I5s-of-YgY"/>
                                                 </constraints>
@@ -251,9 +251,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="tYl-R1-mqX"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P5b-F0-Vpg">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="8" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P5b-F0-Vpg">
                                                 <rect key="frame" x="127" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="P5b-F0-Vpg" secondAttribute="height" multiplier="7:6" id="qgI-1M-sO3"/>
                                                 </constraints>
@@ -269,9 +269,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3WB-a5-sE2"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-4l-fFt">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="9" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-4l-fFt">
                                                 <rect key="frame" x="254" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lf6-LI-QLt">
                                                     <size key="itemSize" width="50" height="50"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -303,7 +303,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="ZIt-4l-fFt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="P5b-F0-Vpg" secondAttribute="trailing" id="1it-4B-LNG"/>
                                             <constraint firstItem="rcb-nc-e0Z" firstAttribute="top" secondItem="OFC-Y7-CMv" secondAttribute="top" id="1yj-n5-YIL"/>
@@ -331,9 +331,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3m-8a-VGB">
                                         <rect key="frame" x="0.0" y="412" width="355" height="127"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-z0-CPD">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3NX-z0-CPD">
                                                 <rect key="frame" x="0.0" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="3NX-z0-CPD" secondAttribute="height" multiplier="7:6" id="jgx-Ki-02x"/>
                                                 </constraints>
@@ -349,9 +349,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="3ta-uq-bs4"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LUR-uq-XuU">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LUR-uq-XuU">
                                                 <rect key="frame" x="127" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="LUR-uq-XuU" secondAttribute="height" multiplier="7:6" id="3H2-Sb-iGh"/>
                                                 </constraints>
@@ -367,9 +367,9 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="yh4-va-dYx"/>
                                                 </connections>
                                             </collectionView>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EVD-Sj-jGm">
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EVD-Sj-jGm">
                                                 <rect key="frame" x="254" y="40.5" width="101" height="86.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bXh-H7-U6r">
                                                     <size key="itemSize" width="50" height="50"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -401,7 +401,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="3NX-z0-CPD" firstAttribute="top" secondItem="i1q-fi-mif" secondAttribute="bottom" constant="20" id="2EA-K8-46A"/>
                                             <constraint firstItem="i1q-fi-mif" firstAttribute="top" secondItem="n3m-8a-VGB" secondAttribute="top" id="4FT-eH-PHr"/>
@@ -425,7 +425,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="n3m-8a-VGB" secondAttribute="trailing" id="2YB-E6-lgn"/>
                                     <constraint firstItem="n3m-8a-VGB" firstAttribute="leading" secondItem="DfL-LW-707" secondAttribute="leading" id="AIz-Mh-LQy"/>
@@ -449,7 +449,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DfL-LW-707" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="1Ww-EU-LgM"/>
                             <constraint firstItem="nKq-fV-2gB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AtF-Wi-YPP"/>

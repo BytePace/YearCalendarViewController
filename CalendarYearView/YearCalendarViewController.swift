@@ -40,6 +40,9 @@ class YearCalendarViewController: UIViewController {
         for cv in collectionViews {
             cv.register(UINib(nibName: "YearCalendarDayCell", bundle: nil), forCellWithReuseIdentifier: YearCalendarDayCellIdentifier)
         }
+        collectionViews.sort { (cv1, cv2) -> Bool in
+            return cv1.tag < cv2.tag
+        }
         generateDates()
     }
     
@@ -113,13 +116,20 @@ extension YearCalendarViewController : UICollectionViewDataSource, UICollectionV
         var array = tempDaysOfWeek[monthIndex]
         var datesArray = tempDates[monthIndex]
         
-        cell.dayLabel.text = ""
-        cell.dayLabel.textColor = UIColor.black
         if array.count > 0 && datesArray.count > 0, array.first == rawDay {
             _ = array.removeFirst()
             cell.date = datesArray.removeFirst()
-            if isThisYear && monthIndex + 1 == Calendar.current.component(.year, from: Date()) && Calendar.current.component(.day, from: Date()) == Calendar.current.component(.day, from: cell.date) {
-                cell.dayLabel.textColor = highlightingColor
+            if isThisYear {
+                let thisMonth = Calendar.current.component(.month, from: Date())
+                if monthIndex + 1 == thisMonth {
+                    let dayIndex = Calendar.current.component(.day, from: cell.date)
+                    let thisDay = Calendar.current.component(.day, from: Date())
+                    if thisDay == dayIndex {
+                        cell.dayLabel.backgroundColor = highlightingColor
+                        cell.dayLabel.layer.cornerRadius = cell.dayLabel.frame.width / 2
+                        cell.dayLabel.layer.masksToBounds = true
+                    }
+                }
             }
             tempDates[monthIndex] = datesArray
             tempDaysOfWeek[monthIndex] = array

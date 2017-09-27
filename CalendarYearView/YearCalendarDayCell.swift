@@ -19,5 +19,13 @@ class YearCalendarDayCell : UICollectionViewCell {
             dayLabel.text = "\(day)"
         }
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        dayLabel.textColor = UIColor.lightGray
+        dayLabel.backgroundColor = UIColor.clear
+        dayLabel.text = ""
+    }
+    
 }
 
